@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "926566671516",
+    "project_id": "maxiface-23a92",
+    "storage_bucket": "maxiface-23a92.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:926566671516:android:633a2ef67de61e481eb959",
+        "android_client_info": {
+          "package_name": "com.maxiface.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "926566671516-nof50pbtub0ff8rqrmfr599hkim0dsh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.maxiface.app",
+            "certificate_hash": "9e1ddcf2e6d4d89ff8b1872002907809c1ccb8f7"
+          }
+        },
+        {
+          "client_id": "926566671516-c83616diraa5pm5f18qao2hnk28m9vqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0WfvKrl9O0y_jqIGnfeu5Zb1qVOeOw50"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "926566671516-c83616diraa5pm5f18qao2hnk28m9vqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
