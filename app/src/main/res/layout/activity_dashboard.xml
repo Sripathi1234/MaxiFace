@@ -58,11 +58,12 @@
             android:padding="0dp" />
     </LinearLayout>
 
-    <!-- Main Content -->
+    <!-- Main Content with ScrollView -->
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="1">
+        android:layout_weight="1"
+        android:fillViewport="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -418,7 +419,7 @@
                 android:layout_height="wrap_content"
                 app:cardCornerRadius="12dp"
                 app:cardElevation="2dp"
-                android:layout_marginBottom="80dp">
+                android:layout_marginBottom="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -426,6 +427,7 @@
                     android:orientation="vertical"
                     android:padding="12dp">
 
+                    <!-- Activity 1 -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -490,6 +492,7 @@
                         android:layout_height="1dp"
                         android:background="#eeeeee" />
 
+                    <!-- Activity 2 -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -554,6 +557,7 @@
                         android:layout_height="1dp"
                         android:background="#eeeeee" />
 
+                    <!-- Activity 3 -->
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -618,7 +622,7 @@
         </LinearLayout>
     </ScrollView>
 
-    <!-- Bottom Navigation -->
+    <!-- Bottom Navigation Bar -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="60dp"
