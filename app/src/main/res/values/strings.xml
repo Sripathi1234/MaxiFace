@@ -1,3 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">MaxiFace</string>
+    <string name="clinical_dashboard">Clinical Dashboard</string>
+    <string name="logo">🏥</string>
+    <string name="notification_icon">🔔</string>
+    <string name="profile_icon">👤</string>
+    <string name="total_patients">3</string>
+    <string name="welcome_doctor">Welcome, Dr. Anderson</string>
+    <string name="specialty">Maxillofacial Surgery Specialist</string>
+    <string name="total_patients_count">156</string>
+    <string name="total_patients_label">Total Patients</string>
+    <string name="high_risk_count">23</string>
+    <string name="high_risk_label">High Risk Cases</string>
+    <string name="low_risk_count">108</string>
+    <string name="low_risk_label">Low Risk Cases</string>
+    <string name="new_prediction">New Prediction</string>
+    <string name="new_prediction_description">Enter patient data and get ML-based complication risk assessment</string>
+    <string name="patient_history">Patient History</string>
+    <string name="patient_history_description">View and manage all previous patient cases and predictions</string>
+    <string name="microscope">🔬</string>
+    <string name="clipboard">📋</string>
+    <string name="ai_assistant">AI Assistant</string>
+    <string name="ai_assistant_description">Get expert guidance on maxillofacial complications</string>
+    <string name="robot">🤖</string>
+    <string name="critical_alerts">Critical Alerts</string>
+    <string name="critical_alerts_description">View high-priority patient cases requiring attention</string>
+    <string name="warning">⚠️</string>
+    <string name="recent_activity">Recent Activity</string>
+    <string name="home">Home</string>
+    <string name="predict">Predict</string>
+    <string name="history">History</string>
+    <string name="profile">Profile</string>
+    <string name="home_icon">🏠</string>
+    <string name="coming_soon">Coming Soon</string>
 </resources>

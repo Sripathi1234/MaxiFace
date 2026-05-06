@@ -51,6 +51,23 @@
         <activity android:name=".OnboardingActivity"
             android:exported="false"/>
 
+        <activity android:name=".AIAssistantActivity"
+            android:exported="false"/>
+        <activity android:name=".CriticalAlertsActivity"
+            android:exported="false"/>
+
+        <activity
+            android:name=".EditProfileActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".SettingsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".NotificationsActivity"
+            android:exported="false" />
+
     </application>
 
 </manifest>

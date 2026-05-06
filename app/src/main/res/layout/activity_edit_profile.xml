@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f0f4f8">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#2d7dd2"
+        android:padding="16dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/btnBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:text="←"
+            android:textSize="24sp"
+            android:textColor="#FFFFFF"
+            android:background="?attr/selectableItemBackground"
+            android:padding="0dp"
+            android:layout_marginEnd="16dp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Edit Profile"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <!-- Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Full Name *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etFullName"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Dr. Anderson Smith"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="anderson.smith@hospital.com"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Specialization *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etSpecialization"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Maxillofacial Surgery"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hospital *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etHospital"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="Central Medical Center"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="20dp"
+                android:textSize="14sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone *"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:textColor="#333333"
+                android:layout_marginBottom="8dp" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:hint="+1 (555) 123-4567"
+                android:padding="12dp"
+                android:background="@drawable/edit_text_background"
+                android:layout_marginBottom="30dp"
+                android:textSize="14sp"
+                android:inputType="phone" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:spacing="12dp">
+
+                <Button
+                    android:id="@+id/btnCancel"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Cancel"
+                    android:textColor="#2d7dd2"
+                    android:background="#FFFFFF"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/btnSave"
+                    android:layout_width="0dp"
+                    android:layout_height="48dp"
+                    android:layout_weight="1"
+                    android:text="Save Changes"
+                    android:textColor="#FFFFFF"
+                    android:backgroundTint="#2d7dd2"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
