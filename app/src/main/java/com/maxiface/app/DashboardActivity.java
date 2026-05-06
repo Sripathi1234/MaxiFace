@@ -109,19 +109,18 @@ public class DashboardActivity extends AppCompatActivity {
                 .get()
                 .addOnSuccessListener(querySnapshot -> {
                     int total = querySnapshot.size();
-                    int high = 0, low = 0, medium = 0;
+                    int high = 0, low = 0;
 
                     for (QueryDocumentSnapshot doc : querySnapshot) {
                         String riskLevel = doc.getString("riskLevel");
                         if (riskLevel == null) riskLevel = doc.getString("risk_level");
                         if ("High".equalsIgnoreCase(riskLevel)) high++;
                         else if ("Low".equalsIgnoreCase(riskLevel)) low++;
-                        else if ("Medium".equalsIgnoreCase(riskLevel)) medium++;
                     }
 
                     tvTotalPatients.setText(String.valueOf(total));
                     tvHighRiskCount.setText(String.valueOf(high));
-                    tvLowRiskCount.setText(String.valueOf(low + medium));
+                    tvLowRiskCount.setText(String.valueOf(low));
                 })
                 .addOnFailureListener(e -> {
                     tvTotalPatients.setText("0");
@@ -136,6 +135,7 @@ public class DashboardActivity extends AppCompatActivity {
 
         db.collection("patients")
                 .whereEqualTo("doctorId", user.getUid())
+                .orderBy("timestamp", com.google.firebase.firestore.Query.Direction.DESCENDING)
                 .limit(5)
                 .get()
                 .addOnSuccessListener(querySnapshot -> {
@@ -197,6 +197,8 @@ public class DashboardActivity extends AppCompatActivity {
             String riskLevel = getStringField(item, "riskLevel", "risk_level", "Low");
             applyRiskBadge(tvBadge, riskLevel);
 
+            llRecentActivity.addView(row);
+
             // Divider between items (except last)
             if (i < items.size() - 1) {
                 View divider = new View(this);
@@ -205,8 +207,6 @@ public class DashboardActivity extends AppCompatActivity {
                 divider.setBackgroundColor(Color.parseColor("#E0E0E0"));
                 llRecentActivity.addView(divider);
             }
-
-            llRecentActivity.addView(row);
         }
     }
 
