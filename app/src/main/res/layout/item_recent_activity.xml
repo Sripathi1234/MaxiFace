@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:padding="12dp">
+
+    <!-- Patient info (left) -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tvRecentPatientName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Smith • 34y"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#1a3a5c"/>
+
+        <TextView
+            android:id="@+id/tvRecentTime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2 hours ago"
+            android:textSize="12sp"
+            android:textColor="#777777"
+            android:layout_marginTop="2dp"/>
+
+    </LinearLayout>
+
+    <!-- Risk percentage + badge (right) -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end">
+
+        <TextView
+            android:id="@+id/tvRecentRiskPct"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="88.8%"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:textColor="#1a3a5c"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvRecentRiskBadge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="High"
+            android:textSize="11sp"
+            android:textStyle="bold"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:background="@drawable/bg_risk_badge_high"
+            android:textColor="#e74c3c"/>
+
+    </LinearLayout>
+
+</LinearLayout>
